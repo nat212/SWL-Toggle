@@ -1,0 +1,1 @@
+Scriptname SWLToggleMCM extends MCM_ConfigBase

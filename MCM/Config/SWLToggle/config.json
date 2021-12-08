@@ -1,0 +1,19 @@
+{
+  "modName": "SWLToggle",
+  "displayName": "SWL Toggle",
+  "minMcmVersion": 9,
+  "pluginRequirements": ["QwibLantern.esp"],
+  "content": [
+    {
+      "text": "Keybinding",
+      "type": "header"
+    },
+    {
+      "text": "Toggle Lantern",
+      "id": "toggleLantern",
+      "type": "keymap",
+      "help": "Keybind to toggle lantern on/off",
+      "ignoreConflicts": false
+    }
+  ]
+}

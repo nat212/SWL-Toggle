@@ -1,0 +1,20 @@
+{
+    // created by vscode papyrus-lang papyrus.skyrimSpecialEdition.generateProject
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "pyro",
+            "projectFile": "SWLToggle.ppj",
+            "gamePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\",
+            "problemMatcher": [
+                "$PapyrusCompiler"
+            ],
+            "label": "pyro: Compile Project",
+            "options": {
+                "statusbar": {
+                    "label": "$(gear) compile"
+                }
+            }
+        }
+    ]
+}

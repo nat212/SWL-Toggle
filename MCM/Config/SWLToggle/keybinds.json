@@ -1,0 +1,15 @@
+{
+  "modName": "SWLToggle",
+  "keybinds": [
+    {
+      "id": "toggleLantern",
+      "desc": "Toggle Lantern",
+      "action": {
+        "type": "CallFunction",
+        "form": "SWLToggle.esp|D63",
+        "scriptName": "SWLToggleMaintenance",
+        "function": "Toggle"
+      }
+    }
+  ]
+}
