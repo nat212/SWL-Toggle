@@ -12,6 +12,7 @@
         <Import>C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Source\Scripts</Import>
         <Import>..\SkyUI SDK\Source\Scripts</Import>
         <Import>..\MCM Helper SDK\Source\Scripts</Import>
+        <Import>..\powerofthree's Papyrus Extender for SSE\source\scripts</Import>
     </Imports>
     <Folders>
         <Folder>.\Source\Scripts</Folder>

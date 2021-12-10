@@ -3,7 +3,7 @@ Scriptname SWLToggleMaintenance extends Quest
 SWLPlayerRef Property SWLQuest Auto
 
 Event OnInit()
-  SWLQuest.Initialise()
+  SWLQuest.Maintenance()
 EndEvent
 
 
