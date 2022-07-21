@@ -13,7 +13,7 @@ Int Property PatchVersion = 0 Auto Hidden
 
 Function Maintenance()
   Int currentMajor = 1
-  Int currentMinor = 1
+  Int currentMinor = 2
   Int currentPatch = 0
   Int installedVersion = (MajorVersion * 100) + (MinorVersion * 10) + PatchVersion
   Int currentVersion = (currentMajor * 100) + (currentMinor * 10) + currentPatch
@@ -71,8 +71,23 @@ EndFunction
 Event OnPlayerLoadGame()
   Maintenance()
   Armor lantern = GetEquippedLantern()
-  If lantern && SWLToggleLanternOn.GetValue()
+  If lantern && !SWLToggleLanternOn.GetValue()
     Int index = GetEquippedLanternIndex()
-    PO3_SKSEFunctions.ReplaceArmorTextureSet(PlayerRef, lantern, SWLToggleTextureSetsOff.GetAt(index) as TextureSet, SWLToggleTextureSetsOn.GetAt(index) as TextureSet)
+    PO3_SKSEFunctions.ReplaceArmorTextureSet(PlayerRef, lantern, SWLToggleTextureSetsOn.GetAt(index) as TextureSet, SWLToggleTextureSetsOff.GetAt(index) as TextureSet)
   EndIf
+EndEvent
+
+Event OnObjectEquipped(Form akBaseObject, ObjectReference akReference)
+  If SWLToggleLanternOn.GetValue()
+    Return
+  EndIf
+  Int i = SWLToggleLanterns.GetSize()
+  While i > 0
+    i -= 1
+    Form l = SWLToggleLanterns.GetAt(i)
+    If l.GetFormID() == akBaseObject.GetFormID()
+      PO3_SKSEFunctions.ReplaceArmorTextureSet(PlayerRef, l as Armor, SWLToggleTextureSetsOn.GetAt(i) as TextureSet, SWLToggleTextureSetsOff.GetAt(i) as TextureSet)
+      Return
+    EndIf
+  EndWhile
 EndEvent

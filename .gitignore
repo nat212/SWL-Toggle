@@ -1,3 +1,4 @@
 meta.ini
 *.code-workspace
 Release/
+/Scripts/Source

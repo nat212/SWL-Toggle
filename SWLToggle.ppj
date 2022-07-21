@@ -8,11 +8,11 @@
     Final="false">
     <Imports>
         <Import>.\Source\Scripts</Import>
-        <Import>C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Scripts\Source</Import>
-        <Import>C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\Source\Scripts</Import>
+        <Import>..\Creation Kit - Source\Scripts\Source</Import>
         <Import>..\SkyUI SDK\Source\Scripts</Import>
-        <Import>..\MCM Helper SDK\Source\Scripts</Import>
-        <Import>..\powerofthree's Papyrus Extender for SSE\source\scripts</Import>
+        <Import>..\SKSE Scripts\Scripts\Source</Import>
+        <Import>..\MCM Helper - SDK\Source\Scripts</Import>
+        <Import>..\powerofthree's Papyrus Extender\Source\Scripts</Import>
     </Imports>
     <Folders>
         <Folder>.\Source\Scripts</Folder>
